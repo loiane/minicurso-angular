@@ -11,7 +11,8 @@
       var textInputElement = document.getElementById('textInput');
 
       textInputElement.addEventListener('keyup', function(){
-        console.log('Evento keyup disparado.');
+         var text = textInputElement.value;
+         console.log('Novo texto tem valor ' + text);
       });
     </script>
   </body>

@@ -10,5 +10,71 @@
     "nome": "exe02",
     "desc": "Adicionado evento keyup no textInput",
     "jsfiddle": "http://jsfiddle.net/loianeg/w5jnmtcv/"
+  },
+  {
+    "id": 3,
+    "nome": "exe03",
+    "desc": "Obtendo texto do textInput à medida que muda",
+    "jsfiddle": "http://jsfiddle.net/loianeg/kphscs9w/"
+  },
+  {
+    "id": 4,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 5,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 6,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 7,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 8,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 9,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 10,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 11,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 12,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
+  },
+  {
+    "id": 13,
+    "nome": "exe03",
+    "desc": "",
+    "jsfiddle": "http://jsfiddle.net/loianeg//"
   }
 ]
