@@ -25,9 +25,9 @@
   },
   {
     "id": 5,
-    "nome": "exe03",
-    "desc": "",
-    "jsfiddle": "http://jsfiddle.net/loianeg//"
+    "nome": "exe05",
+    "desc": "Atualizando um span com JQuery",
+    "jsfiddle": "http://jsfiddle.net/loianeg/92evcqsy/"
   },
   {
     "id": 6,
