@@ -19,9 +19,9 @@
   },
   {
     "id": 4,
-    "nome": "exe03",
-    "desc": "",
-    "jsfiddle": "http://jsfiddle.net/loianeg//"
+    "nome": "exe04",
+    "desc": "Atualizando um span à medida que o textInput muda",
+    "jsfiddle": "http://jsfiddle.net/loianeg/c5ujng10/"
   },
   {
     "id": 5,
