@@ -1,6 +1,8 @@
 # minicurso-angular do site htt://loiane.training
+
 Exemplos do mini curso de introdução ao AngularJS
-Para vídeos e certificado, acesse: [htt://loiane.training](htt://loiane.training)
+
+Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.training)
 
 * Exemplo 01: Exemplo simples com HTML - [JSFiddle](https://jsfiddle.net/loianeg/wLm0tvd0/)
 * Exemplo 02: desc - [JSFiddle](https://jsfiddle.net/loianeg//)
