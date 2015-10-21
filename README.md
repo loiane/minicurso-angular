@@ -4,12 +4,12 @@ Exemplos do mini curso de introdução ao AngularJS
 
 Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.training)
 
-* Exemplo 01: Exemplo simples com HTML - [JSFiddle](https://jsfiddle.net/loianeg/wLm0tvd0/)
-* Exemplo 02: Adicionado evento keyup no textInput - [JSFiddle](https://jsfiddle.net/loianeg/w5jnmtcv/)
-* Exemplo 03: Obtendo texto do textInput à medida que muda - [JSFiddle](https://jsfiddle.net/loianeg/kphscs9w/)
-* Exemplo 04: Atualizando um span à medida que o textInput muda - [JSFiddle](https://jsfiddle.net/loianeg/c5ujng10/)
-* Exemplo 05: Atualizando um span com JQuery - [JSFiddle](https://jsfiddle.net/loianeg/92evcqsy/)
-* Exemplo 06: desc - [JSFiddle](https://jsfiddle.net/loianeg//)
+* Exemplo 01: Exemplo simples com HTML
+* Exemplo 02: Adicionado evento keyup no textInput
+* Exemplo 03: Obtendo texto do textInput à medida que muda
+* Exemplo 04: Atualizando um span à medida que o textInput muda
+* Exemplo 05: Atualizando um span com JQuery
+* Exemplo 06: Atualizando um span com Backbone (MVC)
 * Exemplo 07: desc - [JSFiddle](https://jsfiddle.net/loianeg//)
 * Exemplo 08: desc - [JSFiddle](https://jsfiddle.net/loianeg//)
 * Exemplo 09: desc - [JSFiddle](https://jsfiddle.net/loianeg//)
