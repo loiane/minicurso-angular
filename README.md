@@ -11,7 +11,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 05: Atualizando um span com JQuery
 * Exemplo 06: Atualizando um span com Backbone (MVC)
 * Exemplo 07: Atualizando com AngularJS
-* Exemplo 08: Data binding with many text inputs
+* Exemplo 08: Data binding com vários text inputs
 * Exemplo 09: First name and last name
 * Exemplo 10: Initializing the model using an Angular controller, defined with a global function
 * Exemplo 11: Initializing the model using an Angular controller, defined within an Angular module
