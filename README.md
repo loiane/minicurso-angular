@@ -18,7 +18,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 12: Mudando valores do scope de maneira assíncrona (updates não são aplicados sem .apply())
 * Exemplo 13: Mudando valores do scope de maneira assíncrona (updates aplicados com .apply())
 * Exemplo 14: Listas com loop usando ng-repeat
-* Exemplo 15: Adding entries to a list using forms and ng-submit
+* Exemplo 15: Adicionando items na lista usando form e ng-submit
 * Exemplo 16: Clearing the entered name on submit using data binding
 * Exemplo 17: Removing names from a list using ng-click
 * Exemplo 18: Enumerating objects - countries and their populations

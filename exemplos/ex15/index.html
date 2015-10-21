@@ -1,0 +1,28 @@
+<html ng-app="nameApp">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  </head>
+  <body ng-controller="NameCtrl">
+      <ul>
+          <li ng-repeat="name in names">{{name}}</li>
+      </ul>
+
+      <form ng-submit="addName()">
+          <input type="text" ng-model="enteredName">
+          <input type="submit" value="add">
+      </form>
+
+    <script>
+        var nameApp = angular.module('nameApp', []);
+        nameApp.controller('NameCtrl', function ($scope){
+            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
+
+            $scope.addName = function() {
+                $scope.names.push($scope.enteredName);
+            };
+        });
+    </script>
+  </body>
+</html>
