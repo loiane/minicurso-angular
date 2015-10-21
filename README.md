@@ -12,7 +12,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 06: Atualizando um span com Backbone (MVC)
 * Exemplo 07: Atualizando com AngularJS
 * Exemplo 08: Data binding com vários text inputs
-* Exemplo 09: First name and last name
+* Exemplo 09: Concatenar Nome + Sobrenome
 * Exemplo 10: Initializing the model using an Angular controller, defined with a global function
 * Exemplo 11: Initializing the model using an Angular controller, defined within an Angular module
 * Exemplo 12: Changing scope values asynchronously - updates don't propagate without .apply()
