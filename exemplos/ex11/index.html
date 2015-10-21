@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+  </head>
+  <body>
+    Nome:<input ng-model="firstName" type="text"/>
+    <br>
+    Sobrenome:<input ng-model="lastName" type="text"/>
+    <br>
+    Olá {{firstName}} {{lastName}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script>
+      var nameApp = angular.module('nameApp', []);
+      nameApp.controller('NameCtrl', function ($scope){
+        $scope.firstName = 'Loiane';
+        $scope.lastName = 'Groner';
+      });
+    </script>
+  </body>
+</html>
