@@ -13,9 +13,9 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 07: Atualizando com AngularJS
 * Exemplo 08: Data binding com vários text inputs
 * Exemplo 09: Concatenar Nome + Sobrenome
-* Exemplo 10: Inicializando o Model com um Controller (função global)
-* Exemplo 11: Inicializando o Model com um Controller (definido como módulo do Angular)
-* Exemplo 12: Changing scope values asynchronously - updates don't propagate without .apply()
+* Exemplo 10: Inicializando o Model com um Controller (função global - até Angular 1.2)
+* Exemplo 11: Inicializando o Model com um Controller (definido como módulo do Angular - Angular 1.3+)
+* Exemplo 12: Mudando valores do scope de maneira assíncrona (updates não são aplicados sem .apply())
 * Exemplo 13: Changing scope values asynchronously - updates propagate .apply()
 * Exemplo 14: Looping over lists in templates using ng-repeat
 * Exemplo 15: Adding entries to a list using forms and ng-submit
