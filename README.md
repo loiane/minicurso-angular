@@ -28,7 +28,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 22: Adicionando pesquisa usando Filtros
 * Exemplo 23: Ordenando usando ng-repeat usando orderBy
 * Exemplo 24: Ordenando em forma decrescente
-* Exemplo 25: Sorting table columns interactively
+* Exemplo 25: Ordenando colunas da tabela de forma interativa
 * Exemplo 26: Interactively reversing sort order
 * Exemplo 27: Adding country flag images
 * Exemplo 28: Using ng-src
