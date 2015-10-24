@@ -21,7 +21,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 15: Adicionando items na lista usando form e ng-submit
 * Exemplo 16: Limpando o textInput usando data-binding
 * Exemplo 17: Removendo nomes da lista usando ng-click
-* Exemplo 18: Enumerating objects - countries and their populations
+* Exemplo 18: Enumerando objetos - países e população
 * Exemplo 19: Building a table
 * Exemplo 20: Fetching JSON
 * Exemplo 21: Dependency injection syntax for minification
