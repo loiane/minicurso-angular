@@ -24,7 +24,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 18: Enumerando objetos - países e população
 * Exemplo 19: Construindo uma tabela
 * Exemplo 20: Carregando um JSON
-* Exemplo 21: Dependency injection syntax for minification
+* Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adding search using Angular filters
 * Exemplo 23: Sorting in ng-repeat using orderBy
 * Exemplo 24: Sorting in descending order
