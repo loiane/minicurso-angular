@@ -22,7 +22,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 16: Limpando o textInput usando data-binding
 * Exemplo 17: Removendo nomes da lista usando ng-click
 * Exemplo 18: Enumerando objetos - países e população
-* Exemplo 19: Building a table
+* Exemplo 19: Construindo uma tabela
 * Exemplo 20: Fetching JSON
 * Exemplo 21: Dependency injection syntax for minification
 * Exemplo 22: Adding search using Angular filters
