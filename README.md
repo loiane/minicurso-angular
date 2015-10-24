@@ -26,7 +26,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 20: Carregando um JSON
 * Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adicionando pesquisa usando Filtros
-* Exemplo 23: Sorting in ng-repeat using orderBy
+* Exemplo 23: Ordenando usando ng-repeat usando orderBy
 * Exemplo 24: Sorting in descending order
 * Exemplo 25: Sorting table columns interactively
 * Exemplo 26: Interactively reversing sort order
