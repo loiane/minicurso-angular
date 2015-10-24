@@ -30,7 +30,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 24: Ordenando em forma decrescente
 * Exemplo 25: Ordenando colunas da tabela de forma interativa
 * Exemplo 26: Ordenação reversa de forma interativa
-* Exemplo 27: Adding country flag images
+* Exemplo 27: Adicionando imagens na tabela
 * Exemplo 28: Using ng-src
 * Exemplo 29: Adding capital data
 * Exemplo 30: Adding GDP data
