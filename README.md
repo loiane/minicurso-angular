@@ -32,8 +32,8 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 26: Ordenação reversa de forma interativa
 * Exemplo 27: Adicionando imagens na tabela
 * Exemplo 28: Usando ng-src
-* Exemplo 29: Adding capital data
-* Exemplo 30: Adding GDP data
+* Exemplo 29: Adicionando informações sobre a capital
+* Exemplo 30: Adicionando GDP
 * Exemplo 31: Formatting currency using Angular filters in templates
 * Exemplo 32: Formatting population using Angular filters in templates
 * Exemplo 33: Preparing for routing - making a simple country listing
