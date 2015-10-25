@@ -47,7 +47,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 41: Extraindo os detalhes de um paíse para um serviço
 * Exemplo 42: Cacheando dados do JSON no serviço
 * Exemplo 43: Cacheando JSON usando a opção de cache
-* Exemplo 44: Creating a custom filter to encode URIs
+* Exemplo 44: Criando um filtro para encodar URIs
 * Exemplo 45: Simulating a RESTful service by splitting the JSON data across files
 * Exemplo 46: Creating a custom Angular directive for country entries
 * Exemplo 47: Adding a controller to our custom directive
