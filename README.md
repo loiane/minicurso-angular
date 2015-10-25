@@ -4,6 +4,12 @@ Exemplos do mini curso de introdução ao AngularJS
 
 Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.training)
 
+## TODO:
+* Integração com PHP
+* Integração com Java
+* CRUD MEAN
+
+# Exemplos
 * Exemplo 01: Exemplo simples com HTML
 * Exemplo 02: Adicionado evento keyup no textInput
 * Exemplo 03: Obtendo texto do textInput à medida que muda
@@ -51,6 +57,6 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 45: Simulando uma API RESTful
 * Exemplo 46: Criando uma diretiva para os países
 * Exemplo 47: Adicionando o Controller na diretiva customizada
-* Exemplo 48: Fetching data within custom directives - adding flags to the country listing
-* Exemplo 49: Extracting controllers into a separate module
-* Exemplo 50: Extracting factories and directives to separate modules using method chaining
+* Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada)
+* Exemplo 49: Extraindo controller para um módulo separado
+* Exemplo 50: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
