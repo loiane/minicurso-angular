@@ -50,7 +50,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 44: Criando um filtro para encodar URIs
 * Exemplo 45: Simulando uma API RESTful
 * Exemplo 46: Criando uma diretiva para os países
-* Exemplo 47: Adding a controller to our custom directive
+* Exemplo 47: Adicionando o Controller na diretiva customizada
 * Exemplo 48: Fetching data within custom directives - adding flags to the country listing
 * Exemplo 49: Extracting controllers into a separate module
 * Exemplo 50: Extracting factories and directives to separate modules using method chaining
