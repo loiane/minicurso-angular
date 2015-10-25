@@ -29,7 +29,11 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 17: Removendo nomes da lista usando ng-click
 * Exemplo 18: Enumerando objetos - países e população
 * Exemplo 19: Construindo uma tabela
-* Exemplo 20: Carregando um JSON
+* Exemplo 20: Consumindo um JSON
+* A adicionar: Consumindo JSON do PHP
+* A adicionar: Consumindo JSON do PHP com CORS (apps Mobile)
+* A adicionar: Consumindo JSON do Java
+* A adicionar: Consumindo JSON do Java com CORS (apps Mobile)
 * Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adicionando pesquisa usando Filtros
 * Exemplo 23: Ordenando usando ng-repeat usando orderBy
@@ -55,6 +59,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 43: Cacheando JSON usando a opção de cache
 * Exemplo 44: Criando um filtro para encodar URIs
 * Exemplo 45: Simulando uma API RESTful
+* A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
 * Exemplo 46: Criando uma diretiva para os países
 * Exemplo 47: Adicionando o Controller na diretiva customizada
 * Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada)
