@@ -45,6 +45,16 @@
             };
         });
 
+        countryApp.directive('country', function(){
+            return {
+                scope: {
+                    country: '='
+                },
+                restrict: 'A',
+                templateUrl: 'country.html'
+            };
+        });
+
         countryApp.controller('CountryListCtrl', function ($scope, countries){
             countries.list(function(countries) {
                 $scope.countries = countries;
