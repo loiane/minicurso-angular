@@ -41,7 +41,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 35: Criando templates em arquivos diferentes
 * Exemplo 36: Extraindo e usando parâmetros das rotas
 * Exemplo 37: Usando links com rotas para navegar entre as views
-* Exemplo 38: Looking up details for a single country
+* Exemplo 38: Obtendo os detalhes de um país
 * Exemplo 39: Surfacing data on the country details page
 * Exemplo 40: Creating a service for loading the list of countries
 * Exemplo 41: Extracting the country details query into a service
