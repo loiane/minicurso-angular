@@ -38,7 +38,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 32: Formatando população usando Filtro no template
 * Exemplo 33: Preparando roteamento - lista de países
 * Exemplo 34: Roteamento com ngRoute
-* Exemplo 35: Moving templates for routes into separate files
+* Exemplo 35: Criando templates em arquivos diferentes
 * Exemplo 36: Extracting and using parameters from routes
 * Exemplo 37: Using links with routes for navigation between views
 * Exemplo 38: Looking up details for a single country
