@@ -48,7 +48,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 42: Cacheando dados do JSON no serviço
 * Exemplo 43: Cacheando JSON usando a opção de cache
 * Exemplo 44: Criando um filtro para encodar URIs
-* Exemplo 45: Simulating a RESTful service by splitting the JSON data across files
+* Exemplo 45: Simulando uma API RESTful
 * Exemplo 46: Creating a custom Angular directive for country entries
 * Exemplo 47: Adding a controller to our custom directive
 * Exemplo 48: Fetching data within custom directives - adding flags to the country listing
