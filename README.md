@@ -44,7 +44,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 38: Obtendo os detalhes de um país
 * Exemplo 39: Listando os detalhes de um país
 * Exemplo 40: Criando um serviço para listar os países
-* Exemplo 41: Extracting the country details query into a service
+* Exemplo 41: Extraindo os detalhes de um paíse para um serviço
 * Exemplo 42: Caching JSON data in a service
 * Exemplo 43: Caching JSON using cache option
 * Exemplo 44: Creating a custom filter to encode URIs
