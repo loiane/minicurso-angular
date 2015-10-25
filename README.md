@@ -39,7 +39,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 33: Preparando roteamento - lista de países
 * Exemplo 34: Roteamento com ngRoute
 * Exemplo 35: Criando templates em arquivos diferentes
-* Exemplo 36: Extracting and using parameters from routes
+* Exemplo 36: Extraindo e usando parâmetros das rotas
 * Exemplo 37: Using links with routes for navigation between views
 * Exemplo 38: Looking up details for a single country
 * Exemplo 39: Surfacing data on the country details page
