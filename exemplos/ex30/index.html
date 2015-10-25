@@ -17,7 +17,7 @@
           <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
-              <td><img ng-src="{{country.flagURL}}" width="100"></td>
+              <td><img ng-src="../flags/{{country.code2}}.png" width="16"></td>
               <td>{{country.capital}}</td>
               <td>{{country.gdp}}</td>
           </tr>
