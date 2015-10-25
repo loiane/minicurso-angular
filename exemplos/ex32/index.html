@@ -1,0 +1,38 @@
+<html ng-app="countryApp">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  </head>
+  <body ng-controller="CountryCtrl">
+      Pesquisar:<input ng-model="query" type="text"/>
+      <table>
+          <tr>
+              <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">País</a></th>
+              <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">População</a></th>
+              <th>Bandeira</th>
+              <th>Capital</th>
+              <th><a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)">GDP (PPP)</a></th>
+          </tr>
+          <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
+              <td>{{country.name}}</td>
+              <td>{{country.population | number }}</td>
+              <td><img ng-src="{{country.flagURL}}" width="100"></td>
+              <td>{{country.capital}}</td>
+              <td>{{country.gdp | currency }}</td>
+          </tr>
+      </table>
+
+     <script>
+          var countryApp = angular.module('countryApp', []);
+          countryApp.controller('CountryCtrl', function ($scope, $http){
+              $http.get('countries.json').success(function(data) {
+                  $scope.countries = data;
+              });
+
+              $scope.sortField = 'population';
+              $scope.reverse = true;
+          });
+      </script>
+  </body>
+</html>

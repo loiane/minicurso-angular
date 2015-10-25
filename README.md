@@ -35,7 +35,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 29: Adicionando informações sobre a capital
 * Exemplo 30: Adicionando GDP
 * Exemplo 31: Formatando moeda usando Filtro no template
-* Exemplo 32: Formatting population using Angular filters in templates
+* Exemplo 32: Formatando população usando Filtro no template
 * Exemplo 33: Preparing for routing - making a simple country listing
 * Exemplo 34: Getting started with routing using ngRoute
 * Exemplo 35: Moving templates for routes into separate files
