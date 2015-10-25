@@ -4,16 +4,11 @@ Exemplos do mini curso de introdução ao AngularJS
 
 Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.training)
 
-## TODO:
-* Integração com PHP
-* Integração com Java
-* CRUD MEAN
-
 # Exemplos
 * Exemplo 01: Exemplo simples com HTML
-* Exemplo 02: Adicionado evento keyup no textInput
-* Exemplo 03: Obtendo texto do textInput à medida que muda
-* Exemplo 04: Atualizando um span à medida que o textInput muda
+* Exemplo 02: Adicionado evento keyup no textInput (REMOVER)
+* Exemplo 03: Obtendo texto do textInput à medida que muda (REMOVER)
+* Exemplo 04: Atualizando um span à medida que o textInput muda (MERGE com 02 e 03)
 * Exemplo 05: Atualizando um span com JQuery
 * Exemplo 06: Atualizando um span com Backbone (MVC)
 * Exemplo 07: Atualizando com AngularJS
@@ -30,10 +25,6 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 18: Enumerando objetos - países e população
 * Exemplo 19: Construindo uma tabela
 * Exemplo 20: Consumindo um JSON
-* A adicionar: Consumindo JSON do PHP
-* A adicionar: Consumindo JSON do PHP com CORS (apps Mobile)
-* A adicionar: Consumindo JSON do Java
-* A adicionar: Consumindo JSON do Java com CORS (apps Mobile)
 * Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adicionando pesquisa usando Filtros
 * Exemplo 23: Ordenando usando ng-repeat usando orderBy
@@ -42,10 +33,14 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 26: Ordenação reversa de forma interativa
 * Exemplo 27: Adicionando imagens na tabela
 * Exemplo 28: Usando ng-src
-* Exemplo 29: Adicionando informações sobre a capital
-* Exemplo 30: Adicionando GDP
+* Exemplo 29: Adicionando novas informações na lista
+* Exemplo 30: Adicionando GDP (REMOVER)
 * Exemplo 31: Formatando moeda usando Filtro no template
 * Exemplo 32: Formatando população usando Filtro no template
+* A adicionar: Consumindo JSON do PHP
+* A adicionar: Consumindo JSON do PHP com CORS (apps Mobile)
+* A adicionar: Consumindo JSON do Java
+* A adicionar: Consumindo JSON do Java com CORS (apps Mobile)
 * Exemplo 33: Preparando roteamento - lista de países
 * Exemplo 34: Roteamento com ngRoute
 * Exemplo 35: Criando templates em arquivos diferentes
@@ -54,14 +49,14 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 38: Obtendo os detalhes de um país
 * Exemplo 39: Listando os detalhes de um país
 * Exemplo 40: Criando um serviço para listar os países
-* Exemplo 41: Extraindo os detalhes de um paíse para um serviço
+* Exemplo 41: Extraindo os detalhes de um país para um serviço
 * Exemplo 42: Cacheando dados do JSON no serviço
 * Exemplo 43: Cacheando JSON usando a opção de cache
 * Exemplo 44: Criando um filtro para encodar URIs
 * Exemplo 45: Simulando uma API RESTful
 * A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
-* Exemplo 46: Criando uma diretiva para os países
+* Exemplo 46: Criando uma diretiva para os países (merge com 48)
 * Exemplo 47: Adicionando o Controller na diretiva customizada
-* Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada)
+* Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada) (REMOVER)
 * Exemplo 49: Extraindo controller para um módulo separado
 * Exemplo 50: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
