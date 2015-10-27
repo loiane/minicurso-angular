@@ -38,9 +38,6 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 31: Formatando moeda usando Filtro no template
 * Exemplo 32: Formatando população usando Filtro no template
 * A adicionar: Consumindo JSON do PHP
-* A adicionar: Consumindo JSON do PHP com CORS (apps Mobile)
-* A adicionar: Consumindo JSON do Java
-* A adicionar: Consumindo JSON do Java com CORS (apps Mobile)
 * Exemplo 33: Preparando roteamento - lista de países
 * Exemplo 34: Roteamento com ngRoute
 * Exemplo 35: Criando templates em arquivos diferentes
@@ -53,10 +50,11 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 42: Cacheando dados do JSON no serviço
 * Exemplo 43: Cacheando JSON usando a opção de cache
 * Exemplo 44: Criando um filtro para encodar URIs
-* Exemplo 45: Simulando uma API RESTful
-* A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
 * Exemplo 46: Criando uma diretiva para os países (merge com 48)
 * Exemplo 47: Adicionando o Controller na diretiva customizada
 * Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada) (REMOVER)
 * Exemplo 49: Extraindo controller para um módulo separado
 * Exemplo 50: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
+* Exemplo 45: Simulando uma API RESTful
+* A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
+* A adicionar: CORS (apps mobile)
