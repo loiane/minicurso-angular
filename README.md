@@ -4,6 +4,8 @@ Exemplos do mini curso de introdução ao AngularJS
 
 Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.training)
 
+# Em construção - video-aulas em 2016.
+
 # Exemplos
 * Exemplo 01: Exemplo simples com HTML
 * Exemplo 02: Adicionado evento keyup no textInput (REMOVER)
