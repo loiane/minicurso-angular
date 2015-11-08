@@ -52,7 +52,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 42: Cacheando dados do JSON no serviço
 * Exemplo 43: Cacheando JSON usando a opção de cache
 * Exemplo 44: Criando um filtro para encodar URIs
-* Exemplo 46: Criando uma diretiva para os países (merge com 48)
+* Exemplo 46: Criando uma diretiva para os países (MERGE com 48)
 * Exemplo 47: Adicionando o Controller na diretiva customizada
 * Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada) (REMOVER)
 * Exemplo 49: Extraindo controller para um módulo separado
@@ -60,3 +60,4 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 45: Simulando uma API RESTful
 * A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
 * A adicionar: CORS (apps mobile)
+* A adicionar: validação de formulários
