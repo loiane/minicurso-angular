@@ -6,6 +6,12 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 
 # Em construção - video-aulas em 2016.
 
+# Requisitos
+* Conhecimentos em HTML/JS/CSS básico
+* Editor de texto (Sublime, Atom, Webstorm, Textpad, etc)
+* Webserver PHP instalado (Xampp, wamp, etc)
+* Node.JS + MondoDB
+
 # Exemplos
 * Exemplo 01: Exemplo simples com HTML
 * Exemplo 02: Adicionado evento keyup no textInput (REMOVER)
