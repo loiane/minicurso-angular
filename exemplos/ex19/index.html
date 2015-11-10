@@ -5,13 +5,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body ng-controller="CountryCtrl">
-      Pesquisar:<input ng-model="query" type="text"/>
       <table>
           <tr>
               <th>País</th>
               <th>População</th>
           </tr>
-          <tr ng-repeat="country in countries | filter:query | orderBy:'population'">
+          <tr ng-repeat="country in countries">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
           </tr>

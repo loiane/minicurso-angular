@@ -10,10 +10,12 @@
           <tr>
               <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">País</a></th>
               <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">População</a></th>
+              <th>Bandeira</th>
           </tr>
           <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
+              <td><img ng-src="../flags/{{country.code2}}.png" width="16"></td>
           </tr>
       </table>
 

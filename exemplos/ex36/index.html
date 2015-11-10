@@ -32,9 +32,18 @@
             });
         });
 
-        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams) {
+        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, $http) {
             console.log($routeParams);
             $scope.name = $routeParams.countryName;
+
+            $http.get('countries.json').success(function(data) {
+
+                var country = data.filter(function(entry){
+                    return entry.name === $scope.name;
+                })[0];
+
+                console.log(country);
+            });
         });
     </script>
 </body>

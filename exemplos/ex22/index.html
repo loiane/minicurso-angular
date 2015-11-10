@@ -11,7 +11,7 @@
               <th>País</th>
               <th>População</th>
           </tr>
-          <tr ng-repeat="country in countries | filter:query">
+          <tr ng-repeat="country in countries | filter:query | orderBy:'-population'">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
           </tr>

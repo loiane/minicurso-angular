@@ -27,12 +27,19 @@
         });
 
         countryApp.factory('countries', function($http){
+
+            function getData(callback){
+                $http({
+                    method: 'GET',
+                    url: 'countries.json',
+                    cache: true
+                }).success(callback);
+            }
+
             return {
-                list: function(callback){
-                    $http.get('countries.json').success(callback);
-                },
+                list: getData,
                 find: function(name, callback){
-                    $http.get('countries.json').success(function(data) {
+                    getData(function(data) {
                         var country = data.filter(function(entry){
                             return entry.name === name;
                         })[0];

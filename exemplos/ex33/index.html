@@ -1,21 +1,40 @@
 <html ng-app="countryApp">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  </head>
-  <body ng-controller="CountryCtrl">
-      <ul>
-          <li ng-repeat="country in countries">{{country.name}}</li>
-      </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+</head>
+<body>
+    <div ng-view></div>
 
-     <script>
-          var countryApp = angular.module('countryApp', []);
-          countryApp.controller('CountryCtrl', function ($scope, $http){
-              $http.get('../data/countries.json').success(function(data) {
-                  $scope.countries = data;
-              });
-          });
-      </script>
-  </body>
+    <script>
+        var countryApp = angular.module('countryApp', ['ngRoute']);
+
+        countryApp.config(function($routeProvider) {
+            $routeProvider.
+                    when('/', {
+                        templateUrl: 'country-list.html',
+                        controller: 'CountryListCtrl'
+                    }).
+                    when('/:countryName', {
+                        templateUrl: 'country-detail.html',
+                        controller: 'CountryDetailCtrl'
+                    }).
+                    otherwise({
+                        redirectTo: '/'
+                    });
+        });
+
+        countryApp.controller('CountryListCtrl', function ($scope, $http) {
+            $http.get('../data/countries.json').success(function (data) {
+                $scope.countries = data;
+            });
+        });
+
+        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams) {
+            console.log($routeParams);
+        });
+    </script>
+</body>
 </html>

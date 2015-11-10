@@ -28,17 +28,12 @@
 
         countryApp.factory('countries', function($http){
 
-            var cachedData;
-
             function getData(callback){
-                if(cachedData) {
-                    callback(cachedData);
-                } else {
-                    $http.get('countries.json').success(function(data){
-                        cachedData = data;
-                        callback(data);
-                    });
-                }
+                $http({
+                    method: 'GET',
+                    url: 'countries.json',
+                    cache: true
+                }).success(callback);
             }
 
             return {
@@ -64,6 +59,10 @@
             countries.find($routeParams.countryName, function(country) {
                 $scope.country = country;
             });
+        });
+
+        countryApp.filter('encodeURI', function(){
+            return window.encodeURI;
         });
     </script>
 </body>

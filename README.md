@@ -31,38 +31,36 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 16: Enumerando objetos - países e população
 * Exemplo 17: Construindo uma tabela
 * Exemplo 18: Consumindo um JSON
-* Exemplo 19: Consumindo um JSON do PHP + MySQL
-* Exemplo 21: Sintaxe de injeção de dependência para minificação
-* Exemplo 22: Adicionando pesquisa usando Filtros
-* Exemplo 23: Ordenando usando ng-repeat usando orderBy
-* Exemplo 24: Ordenando em forma decrescente
-* Exemplo 25: Ordenando colunas da tabela de forma interativa
-* Exemplo 26: Ordenação reversa de forma interativa
-* Exemplo 27: Adicionando imagens na tabela
-* Exemplo 28: Usando ng-src
-* Exemplo 29: Adicionando novas informações na lista
-* Exemplo 30: Adicionando GDP (REMOVER)
-* Exemplo 31: Formatando moeda usando Filtro no template
-* Exemplo 32: Formatando população usando Filtro no template
-* A adicionar: Consumindo JSON do PHP
-* Exemplo 33: Preparando roteamento - lista de países
-* Exemplo 34: Roteamento com ngRoute
-* Exemplo 35: Criando templates em arquivos diferentes
-* Exemplo 36: Extraindo e usando parâmetros das rotas
-* Exemplo 37: Usando links com rotas para navegar entre as views
-* Exemplo 38: Obtendo os detalhes de um país
-* Exemplo 39: Listando os detalhes de um país
-* Exemplo 40: Criando um serviço para listar os países
-* Exemplo 41: Extraindo os detalhes de um país para um serviço
-* Exemplo 42: Cacheando dados do JSON no serviço
-* Exemplo 43: Cacheando JSON usando a opção de cache
-* Exemplo 44: Criando um filtro para encodar URIs
+* Exemplo 19: Sintaxe de injeção de dependência para minificação
+* Exemplo 20: Adicionando pesquisa usando Filtros
+* Exemplo 21: Ordenando usando ng-repeat usando orderBy
+* Exemplo 22: Ordenando em forma decrescente
+* Exemplo 23: Ordenando colunas da tabela de forma interativa
+* Exemplo 24: Ordenação reversa de forma interativa
+* Exemplo 25: Adicionando imagens na tabela
+* Exemplo 26: Usando ng-src
+* Exemplo 27: Adicionando novas informações na lista
+* Exemplo 28: Formatando moeda usando Filtro no template
+* Exemplo 29: Formatando população usando Filtro no template
+* Exemplo 30: Consumindo um JSON do PHP + MySQL
+* Exemplo 31: Preparando roteamento - lista de países
+* Exemplo 32: Roteamento com ngRoute
+* Exemplo 33: Criando templates em arquivos diferentes
+* Exemplo 34: Extraindo e usando parâmetros das rotas
+* Exemplo 35: Usando links com rotas para navegar entre as views
+* Exemplo 36: Obtendo os detalhes de um país
+* Exemplo 37: Listando os detalhes de um país
+* Exemplo 38: Criando um serviço para listar os países
+* Exemplo 39: Extraindo os detalhes de um país para um serviço
+* Exemplo 40: Cacheando dados do JSON no serviço
+* Exemplo 41: Cacheando JSON usando a opção de cache
+* Exemplo 42: Criando um filtro para encodar URIs
 * Exemplo 46: Criando uma diretiva para os países (MERGE com 48)
 * Exemplo 47: Adicionando o Controller na diretiva customizada
 * Exemplo 48: Adicionando bandeira na listagem de países (diretiva customizada) (REMOVER)
 * Exemplo 49: Extraindo controller para um módulo separado
 * Exemplo 50: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
-* Exemplo 45: Simulando uma API RESTful
+* Exemplo 51: Simulando uma API RESTful
 * A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
 * A adicionar: CORS (apps mobile)
 * A adicionar: validação de formulários

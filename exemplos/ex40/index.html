@@ -27,9 +27,29 @@
         });
 
         countryApp.factory('countries', function($http){
+
+            var cachedData;
+
+            function getData(callback){
+                if(cachedData) {
+                    callback(cachedData);
+                } else {
+                    $http.get('countries.json').success(function(data){
+                        cachedData = data;
+                        callback(data);
+                    });
+                }
+            }
+
             return {
-                list: function(callback){
-                    $http.get('countries.json').success(callback);
+                list: getData,
+                find: function(name, callback){
+                    getData(function(data) {
+                        var country = data.filter(function(entry){
+                            return entry.name === name;
+                        })[0];
+                        callback(country);
+                    });
                 }
             };
         });
@@ -40,11 +60,9 @@
             });
         });
 
-        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, $http){
-            $http.get('countries.json').success(function(data) {
-                $scope.country = data.filter(function(entry){
-                    return entry.name === $routeParams.countryName
-                })[0];
+        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, countries){
+            countries.find($routeParams.countryName, function(country) {
+                $scope.country = country;
             });
         });
     </script>
