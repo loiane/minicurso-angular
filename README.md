@@ -31,7 +31,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 16: Enumerando objetos - países e população
 * Exemplo 17: Construindo uma tabela
 * Exemplo 18: Consumindo um JSON
-* Exemplo 18: Consumindo um JSON do PHP + MySQL
+* Exemplo 19: Consumindo um JSON do PHP + MySQL
 * Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adicionando pesquisa usando Filtros
 * Exemplo 23: Ordenando usando ng-repeat usando orderBy
