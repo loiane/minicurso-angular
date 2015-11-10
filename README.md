@@ -14,25 +14,24 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 
 # Exemplos
 * Exemplo 01: Exemplo simples com HTML
-* Exemplo 02: Adicionado evento keyup no textInput (REMOVER)
-* Exemplo 03: Obtendo texto do textInput à medida que muda (REMOVER)
-* Exemplo 04: Atualizando um span à medida que o textInput muda (MERGE com 02 e 03)
-* Exemplo 05: Atualizando um span com JQuery
-* Exemplo 06: Atualizando um span com Backbone (MVC)
-* Exemplo 07: Atualizando com AngularJS
-* Exemplo 08: Data binding com vários text inputs
-* Exemplo 09: Concatenar Nome + Sobrenome
-* Exemplo 10: Inicializando o Model com um Controller (função global - até Angular 1.2)
-* Exemplo 11: Inicializando o Model com um Controller (definido como módulo do Angular - Angular 1.3+)
-* Exemplo 12: Mudando valores do scope de maneira assíncrona (updates não são aplicados sem .apply())
-* Exemplo 13: Mudando valores do scope de maneira assíncrona (updates aplicados com .apply())
-* Exemplo 14: Listas com loop usando ng-repeat
-* Exemplo 15: Adicionando items na lista usando form e ng-submit
-* Exemplo 16: Limpando o textInput usando data-binding
-* Exemplo 17: Removendo nomes da lista usando ng-click
-* Exemplo 18: Enumerando objetos - países e população
-* Exemplo 19: Construindo uma tabela
-* Exemplo 20: Consumindo um JSON
+* Exemplo 02: Atualizando um span à medida que o textInput muda (MERGE com 02 e 03)
+* Exemplo 03: Atualizando um span com JQuery
+* Exemplo 04: Atualizando um span com Backbone (MVC)
+* Exemplo 05: Atualizando com AngularJS
+* Exemplo 06: Data binding com vários text inputs
+* Exemplo 07: Concatenar Nome + Sobrenome
+* Exemplo 08: Inicializando o Model com um Controller (função global - até Angular 1.2)
+* Exemplo 09: Inicializando o Model com um Controller (definido como módulo do Angular - Angular 1.3+)
+* Exemplo 10: Mudando valores do scope de maneira assíncrona (updates não são aplicados sem .apply())
+* Exemplo 11: Mudando valores do scope de maneira assíncrona (updates aplicados com .apply())
+* Exemplo 12: Listas com loop usando ng-repeat
+* Exemplo 13: Adicionando items na lista usando form e ng-submit
+* Exemplo 14: Limpando o textInput usando data-binding
+* Exemplo 15: Removendo nomes da lista usando ng-click
+* Exemplo 16: Enumerando objetos - países e população
+* Exemplo 17: Construindo uma tabela
+* Exemplo 18: Consumindo um JSON
+* Exemplo 18: Consumindo um JSON do PHP + MySQL
 * Exemplo 21: Sintaxe de injeção de dependência para minificação
 * Exemplo 22: Adicionando pesquisa usando Filtros
 * Exemplo 23: Ordenando usando ng-repeat usando orderBy

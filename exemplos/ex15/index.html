@@ -6,7 +6,8 @@
   </head>
   <body ng-controller="NameCtrl">
       <ul>
-          <li ng-repeat="name in names">{{name}}</li>
+          <li ng-repeat="name in names">{{name}}
+          <a href="" ng-click="removeName(name)">Remover</a></li>
       </ul>
 
       <form ng-submit="addName()">
@@ -21,6 +22,12 @@
 
             $scope.addName = function() {
                 $scope.names.push($scope.enteredName);
+                $scope.enteredName = '';
+            };
+
+            $scope.removeName = function(name) {
+                var i = $scope.names.indexOf(name);
+                $scope.names.splice(i, 1);
             };
         });
     </script>

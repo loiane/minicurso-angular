@@ -1,20 +1,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>1-way data binding manual</title>
+    <title>1-way data binding manual com Backbone (MVC)</title>
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//jashkenas.github.io/underscore/underscore-min.js"></script>
+    <script src="//jashkenas.github.io/backbone/backbone-min.js"></script>
   </head>
   <body>
     Nome:<input id="textInput" type="text"/></br>
-    Olá <span id="nameDiv"></span>!
+    Olá <span id="nameSpan"></span>!
 
     <script>
-      var textInputElement = document.getElementById('textInput'),
-          nameDivElement = document.getElementById('nameDiv');
 
-      textInputElement.addEventListener('keyup', function(){
-         var text = textInputElement.value;
-         nameDivElement.innerHTML = text;
+      // Model
+      var model = new Backbone.Model({
+        name: ''
       });
+
+      // View
+      model.on('change:name', function(){
+        $('#nameSpan').html(model.get('name'));
+      });
+
+      // Controller
+      $('#textInput').on('keyup', function(){
+        model.set('name', $('#textInput').val());
+      });
+
     </script>
+
   </body>
 </html>

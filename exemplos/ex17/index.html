@@ -1,34 +1,29 @@
-<html ng-app="nameApp">
+<html ng-app="countryApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
-  <body ng-controller="NameCtrl">
-      <ul>
-          <li ng-repeat="name in names">{{name}}
-          <a href="" ng-click="removeName(name)">Remover</a></li>
-      </ul>
-
-      <form ng-submit="addName()">
-          <input type="text" ng-model="enteredName">
-          <input type="submit" value="add">
-      </form>
+  <body ng-controller="CountryCtrl">
+      <table>
+          <tr>
+              <th>País</th>
+              <th>População</th>
+          </tr>
+          <tr ng-repeat="country in countries">
+              <td>{{country.name}}</td>
+              <td>{{country.population}}</td>
+          </tr>
+      </table>
 
     <script>
-        var nameApp = angular.module('nameApp', []);
-        nameApp.controller('NameCtrl', function ($scope){
-            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
-
-            $scope.addName = function() {
-                $scope.names.push($scope.enteredName);
-                $scope.enteredName = '';
-            };
-
-            $scope.removeName = function(name) {
-                var i = $scope.names.indexOf(name);
-                $scope.names.splice(i, 1);
-            };
+        var countryApp = angular.module('countryApp', []);
+        countryApp.controller('CountryCtrl', function ($scope){
+            $scope.countries = [
+                {"name": "China", "population": 1359821000},
+                {"name": "India", "population": 1205625000},
+                {"name": "United States of America","population": 312247000}
+            ];
         });
     </script>
   </body>

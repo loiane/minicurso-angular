@@ -1,17 +1,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Starter</title>
+    <title>1-way data binding manual</title>
   </head>
   <body>
-    Nome:<input id="textInput" type="text"/>
-    <p>Exemplo simples com HTML</p>
+    Nome:<input id="textInput" type="text"/></br>
+    Olá <span id="nameDiv"></span>!
 
     <script>
-      var textInputElement = document.getElementById('textInput');
+      var textInputElement = document.getElementById('textInput'),
+          nameDivElement = document.getElementById('nameDiv');
 
       textInputElement.addEventListener('keyup', function(){
-        console.log('Evento keyup disparado.');
+         var text = textInputElement.value;
+         nameDivElement.innerHTML = text;
       });
     </script>
   </body>

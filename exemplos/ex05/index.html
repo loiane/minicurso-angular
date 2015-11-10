@@ -1,18 +1,11 @@
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
-    <title>1-way data binding manual com jQuery</title>
-    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <title>Olá Mundo - AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body>
-    Nome:<input id="textInput" type="text"/></br>
-    Olá <span id="nameDiv"></span>!
-
-    <script>
-      $('#textInput').on('keyup', function(){
-        $('#nameDiv').html($('#textInput').val());
-      });
-    </script>
-
+    Nome:<input ng-model="name" type="text"/></br>
+    Olá {{name}}!
   </body>
 </html>

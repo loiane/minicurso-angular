@@ -5,24 +5,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body ng-controller="NameCtrl">
-    Nome:<input ng-model="firstName" type="text"/>
-    <br>
-    Sobrenome:<input ng-model="lastName" type="text"/>
-    <br>
-    Olá {{firstName}} {{lastName}}
+      <ul>
+          <li ng-repeat="name in names">{{name}}</li>
+      </ul>
 
     <script>
         var nameApp = angular.module('nameApp', []);
         nameApp.controller('NameCtrl', function ($scope){
-            $scope.firstName = 'Loiane';
-
-            $scope.$watch('lastName', function(newValue, oldValue){
-                console.log('novo valor do sobrenome é ' + newValue);
-            });
-
-            setTimeout(function(){
-                $scope.lastName = 'Groner';
-            }, 1000);
+            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
         });
     </script>
   </body>

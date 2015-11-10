@@ -5,18 +5,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body ng-controller="CountryCtrl">
-      <ul>
-          <li ng-repeat="country in countries">{{country.name}} - população {{country.population}}</li>
-      </ul>
+      <table>
+          <tr>
+              <th>País</th>
+              <th>População</th>
+          </tr>
+          <tr ng-repeat="country in countries">
+              <td>{{country.name}}</td>
+              <td>{{country.population}}</td>
+          </tr>
+      </table>
 
     <script>
         var countryApp = angular.module('countryApp', []);
-        countryApp.controller('CountryCtrl', function ($scope){
-            $scope.countries = [
-                {"name": "China", "population": 1359821000},
-                {"name": "India", "population": 1205625000},
-                {"name": "United States of America","population": 312247000}
-            ];
+        countryApp.controller('CountryCtrl', function ($scope, $http){
+            $http.get('../data/countries.json').success(function(data) {
+                $scope.countries = data;
+            });
         });
     </script>
   </body>

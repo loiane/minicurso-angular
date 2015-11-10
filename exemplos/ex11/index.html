@@ -12,11 +12,19 @@
     Olá {{firstName}} {{lastName}}
 
     <script>
-      var nameApp = angular.module('nameApp', []);
-      nameApp.controller('NameCtrl', function ($scope){
-        $scope.firstName = 'Loiane';
-        $scope.lastName = 'Groner';
-      });
+        var nameApp = angular.module('nameApp', []);
+        nameApp.controller('NameCtrl', function ($scope){
+            $scope.firstName = 'Loiane';
+
+            $scope.$watch('lastName', function(newValue, oldValue){
+                console.log('novo valor do sobrenome é ' + newValue);
+            });
+
+            setTimeout(function(){
+                $scope.lastName = 'Groner';
+                $scope.$apply();
+            }, 1000);
+        });
     </script>
   </body>
 </html>
