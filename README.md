@@ -27,6 +27,10 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 12: Listas com loop usando ng-repeat
 * Exemplo 13: Adicionando items na lista usando form e ng-submit
 * Exemplo 14: Limpando o textInput usando data-binding
+* A adicionar: Adicionando validação básica ao formulário
+* A adicionar: Adicionando validação customizada através de diretiva
+* A adicionar: Adicionando variáveis de controle no form
+* A adicionar: Adicionando CSS na validação do formulário
 * Exemplo 15: Removendo nomes da lista usando ng-click
 * Exemplo 16: Enumerando objetos - países e população
 * Exemplo 17: Construindo uma tabela
@@ -60,6 +64,9 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 45: Extraindo controller para um módulo separado
 * Exemplo 46: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
 * Exemplo 47: Simulando uma API RESTful
-* A adicionar: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS)
-* A adicionar: CORS (apps mobile)
-* A adicionar: validação de formulários
+* 48: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): criando o projeto
+* 49: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): READ
+* 50: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): UPDATE
+* 51: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): CREATE
+* 52: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): DESTROY/DELETE
+* 53: CORS (apps mobile)
