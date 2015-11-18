@@ -65,9 +65,9 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 50: Extraindo controller para um módulo separado
 * Exemplo 51: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
 * Exemplo 52: Simulando uma API RESTful
-* 48: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): criando o projeto
-* 49: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): READ
-* 50: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): UPDATE
-* 51: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): CREATE
-* 52: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): DESTROY/DELETE
-* 53: CORS (apps mobile)
+* Exemplo 53: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): READ
+* Exemplo 54: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): UPDATE
+* Exemplo 55: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): CREATE
+* Exemplo 56: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): DESTROY/DELETE
+* Exemplo 57: CRUD com MEAN: Criando o projeto e importando o Angular
+* Exemplo 58: CRUD com MEAN: Código backend (NodeJS)
