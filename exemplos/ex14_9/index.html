@@ -25,11 +25,12 @@
       </ul>
 
       <form ng-submit="addName()" name="form" class="css-form" novalidate >
-          <input type="text" ng-model="enteredName" name="enteredName" required ng-minlength=5 ng-maxlength=20 >
+          <input type="text" ng-model="enteredName" name="enteredName" required ng-minlength=5 ng-maxlength=20 username >
           <div ng-show="form.enteredName.$dirty && form.enteredName.$invalid">
             <span ng-show="form.enteredName.$error.required">Nome é obrigatório!</span>
           <span ng-show="form.enteredName.$error.minlength || form.enteredName.$error.maxlength">
             Nome precisa ter entre 5 e 20 caracteres</span>
+          <span ng-show="form.enteredName.$error.username">Nome já está na lista!</span>  
           </div>
           </br>  
           <input type="submit" >
@@ -43,9 +44,43 @@
             $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
 
             $scope.addName = function() {
-                $scope.names.push($scope.enteredName);
-                $scope.enteredName = '';
+                if (!$scope.form.$invalid){
+                  $scope.names.push($scope.enteredName);
+                  $scope.enteredName = '';
+                }
             };
+        });
+
+        nameApp.directive('username', function($q, $timeout) {
+          return {
+            require: 'ngModel',
+            link: function(scope, elm, attrs, ctrl) {
+              var usernames = ['Jimmy', 'John', 'Jill', 'Jackie'];
+
+              ctrl.$asyncValidators.username = function(modelValue, viewValue) {
+
+                if (ctrl.$isEmpty(modelValue)) {
+                  // consider empty model valid
+                  return $q.when();
+                }
+
+                var def = $q.defer();
+
+                $timeout(function() {
+                  // Mock a delayed response
+                  if (usernames.indexOf(modelValue) === -1) {
+                    // The username is available
+                    def.resolve();
+                  } else {
+                    def.reject();
+                  }
+
+                }, 2000);
+
+                return def.promise;
+              };
+            }
+          };
         });
     </script>
   </body>

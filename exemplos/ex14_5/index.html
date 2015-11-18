@@ -9,10 +9,12 @@
           <li ng-repeat="name in names">{{name}}</li>
       </ul>
 
-      <form name="form" novalidate ng-submit="addName()">
-          <input type="text"  name="name" required ng-minlength=5 ng-maxlength=20>
-          <input type="submit">
+      <form ng-submit="addName()" novalidate >
+          <input type="text" ng-model="enteredName" required ng-minlength=5 ng-maxlength=20 >
+          <input type="submit" >
       </form>
+
+      <pre ng-bind="enteredName | json"></pre>
 
     <script>
         var nameApp = angular.module('nameApp', []);

@@ -27,10 +27,11 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 12: Listas com loop usando ng-repeat
 * Exemplo 13: Adicionando items na lista usando form e ng-submit
 * Exemplo 14: Limpando o textInput usando data-binding
-* A adicionar: Adicionando validação básica ao formulário
-* A adicionar: Adicionando validação customizada através de diretiva
-* A adicionar: Adicionando variáveis de controle no form
-* A adicionar: Adicionando CSS na validação do formulário
+* A adicionar - 15: Adicionando validação básica ao formulário
+* A adicionar - 16: Adicionando CSS na validação do formulário
+* A adicionar - 17: Adicionando variáveis de controle no form e campos (CSS)
+* A adicionar - 18: Submeter valores de formulário válido no controller
+* A adicionar - 19: Adicionando validação customizada através de diretiva
 * Exemplo 15: Removendo nomes da lista usando ng-click
 * Exemplo 16: Enumerando objetos - países e população
 * Exemplo 17: Construindo uma tabela
