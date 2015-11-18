@@ -25,13 +25,13 @@
       </ul>
 
       <form ng-submit="addName()" name="form" class="css-form" novalidate >
-          <input type="text" ng-model="enteredName" name="enteredName" required ng-minlength=5 ng-maxlength=20 username >
+          <input type="text" ng-model="enteredName" name="enteredName" required ng-minlength=5 ng-maxlength=20 uniquename >
           <div ng-show="form.enteredName.$dirty && form.enteredName.$invalid">
             <span ng-show="form.enteredName.$error.required">Nome é obrigatório!</span>
           <span ng-show="form.enteredName.$error.minlength || form.enteredName.$error.maxlength">
             Nome precisa ter entre 5 e 20 caracteres</span>
-          <span ng-show="form.enteredName.$pending.username">Verificando disponibilidade...</span>  
-          <span ng-show="form.enteredName.$error.username">Nome já está na lista!</span>  
+          <span ng-show="form.enteredName.$pending.uniquename">Verificando disponibilidade...</span>  
+          <span ng-show="form.enteredName.$error.uniquename">Nome já está na lista!</span>  
           </div>
           </br>  
           <input type="submit" ng-disabled="form.$invalid" >
@@ -52,13 +52,13 @@
             };
         });
 
-        nameApp.directive('username', function($q, $timeout) {
+        nameApp.directive('uniquename', function($q, $timeout) {
           return {
             require: 'ngModel',
             link: function(scope, elm, attrs, ctrl) {
-              var usernames = scope.names;
+              var uniquenames = scope.names;
 
-              ctrl.$asyncValidators.username = function(modelValue, viewValue) {
+              ctrl.$asyncValidators.uniquename = function(modelValue, viewValue) {
 
                 if (ctrl.$isEmpty(modelValue)) {
                   // consider empty model valid
@@ -69,8 +69,8 @@
 
                 $timeout(function() {
                   // Mock a delayed response
-                  if (usernames.indexOf(modelValue) === -1) {
-                    // The username is available
+                  if (uniquenames.indexOf(modelValue) === -1) {
+                    // The uniquename is available
                     def.resolve();
                   } else {
                     def.reject();
