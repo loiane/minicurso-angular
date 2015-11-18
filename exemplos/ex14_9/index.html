@@ -30,10 +30,11 @@
             <span ng-show="form.enteredName.$error.required">Nome é obrigatório!</span>
           <span ng-show="form.enteredName.$error.minlength || form.enteredName.$error.maxlength">
             Nome precisa ter entre 5 e 20 caracteres</span>
+          <span ng-show="form.enteredName.$pending.username">Verificando disponibilidade...</span>  
           <span ng-show="form.enteredName.$error.username">Nome já está na lista!</span>  
           </div>
           </br>  
-          <input type="submit" >
+          <input type="submit" ng-disabled="form.$invalid" >
       </form>
 
       <pre ng-bind="enteredName | json"></pre>
@@ -55,7 +56,7 @@
           return {
             require: 'ngModel',
             link: function(scope, elm, attrs, ctrl) {
-              var usernames = ['Jimmy', 'John', 'Jill', 'Jackie'];
+              var usernames = scope.names;
 
               ctrl.$asyncValidators.username = function(modelValue, viewValue) {
 
