@@ -11,14 +11,14 @@
     <script>
         var countryApp = angular.module('countryApp', ['ngRoute']);
 
-        countryApp.config(function($routeProvider) {
+        countryApp.config(function ($routeProvider) {
             $routeProvider.
                     when('/', {
-                        templateUrl: 'country-list.html',
+                        template: '<ul><li ng-repeat="country in countries">{{country.name}}</li><ul>',
                         controller: 'CountryListCtrl'
                     }).
                     when('/:countryName', {
-                        templateUrl: 'country-detail.html',
+                        template: '<h1>TODO criar view de detalhe</h1>',
                         controller: 'CountryDetailCtrl'
                     }).
                     otherwise({
@@ -27,20 +27,13 @@
         });
 
         countryApp.controller('CountryListCtrl', function ($scope, $http) {
-            $http.get('countries.json').success(function (data) {
+            $http.get('../data/countries.json').success(function (data) {
                 $scope.countries = data;
             });
         });
 
-        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, $http) {
+        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams) {
             console.log($routeParams);
-            $scope.name = $routeParams.countryName;
-
-            $http.get('countries.json').success(function(data) {
-                $scope.country = data.filter(function(entry){
-                    return entry.name === $scope.name;
-                })[0];
-            });
         });
     </script>
 </body>

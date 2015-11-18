@@ -1,29 +1,35 @@
-<html ng-app="countryApp">
+<html ng-app="nameApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
-  <body ng-controller="CountryCtrl">
-      Pesquisar:<input ng-model="query" type="text"/>
-      <table>
-          <tr>
-              <th>País</th>
-              <th>População</th>
-          </tr>
-          <tr ng-repeat="country in countries | filter:query">
-              <td>{{country.name}}</td>
-              <td>{{country.population}}</td>
-          </tr>
-      </table>
+  <body ng-controller="NameCtrl">
+      <ul>
+          <li ng-repeat="name in names">{{name}}
+          <a href="" ng-click="removeName(name)">Remover</a></li>
+      </ul>
+
+      <form ng-submit="addName()">
+          <input type="text" ng-model="enteredName">
+          <input type="submit" value="add">
+      </form>
 
     <script>
-        var countryApp = angular.module('countryApp', []);
-        countryApp.controller('CountryCtrl', ['$scope', '$http', function (scope, http){
-            http.get('../data/countries.json').success(function(data) {
-                scope.countries = data;
-            });
-        }]);
+        var nameApp = angular.module('nameApp', []);
+        nameApp.controller('NameCtrl', function ($scope){
+            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
+
+            $scope.addName = function() {
+                $scope.names.push($scope.enteredName);
+                $scope.enteredName = '';
+            };
+
+            $scope.removeName = function(name) {
+                var i = $scope.names.indexOf(name);
+                $scope.names.splice(i, 1);
+            };
+        });
     </script>
   </body>
 </html>

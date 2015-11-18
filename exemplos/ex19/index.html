@@ -1,28 +1,88 @@
-<html ng-app="countryApp">
+<html ng-app="nameApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <style type="text/css">
+      .css-form input.ng-invalid.ng-touched {
+        background-color: #FA787E;
+      }
+
+      .css-form input.ng-valid.ng-touched {
+        background-color: #78FA89;
+      }
+
+      form .error {
+          color: #bb1f34;
+          font-size: 1.2em;
+          margin: 0.9em 0;
+      }
+    </style>
   </head>
-  <body ng-controller="CountryCtrl">
-      <table>
-          <tr>
-              <th>País</th>
-              <th>População</th>
-          </tr>
-          <tr ng-repeat="country in countries">
-              <td>{{country.name}}</td>
-              <td>{{country.population}}</td>
-          </tr>
-      </table>
+  <body ng-controller="NameCtrl">
+      <ul>
+          <li ng-repeat="name in names">{{name}}</li>
+      </ul>
+
+      <form ng-submit="addName()" name="form" class="css-form" novalidate >
+          <input type="text" ng-model="enteredName" name="enteredName" required ng-minlength=5 ng-maxlength=20 username >
+          <div ng-show="form.enteredName.$dirty && form.enteredName.$invalid">
+            <span ng-show="form.enteredName.$error.required">Nome é obrigatório!</span>
+          <span ng-show="form.enteredName.$error.minlength || form.enteredName.$error.maxlength">
+            Nome precisa ter entre 5 e 20 caracteres</span>
+          <span ng-show="form.enteredName.$pending.username">Verificando disponibilidade...</span>  
+          <span ng-show="form.enteredName.$error.username">Nome já está na lista!</span>  
+          </div>
+          </br>  
+          <input type="submit" ng-disabled="form.$invalid" >
+      </form>
+
+      <pre ng-bind="enteredName | json"></pre>
 
     <script>
-        var countryApp = angular.module('countryApp', []);
-        countryApp.controller('CountryCtrl', ['$scope', '$http', function (scope, http){
-            http.get('../data/countries.json').success(function(data) {
-                scope.countries = data;
-            });
-        }]);
+        var nameApp = angular.module('nameApp', []);
+        nameApp.controller('NameCtrl', function ($scope){
+            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
+
+            $scope.addName = function() {
+                if (!$scope.form.$invalid){
+                  $scope.names.push($scope.enteredName);
+                  $scope.enteredName = '';
+                }
+            };
+        });
+
+        nameApp.directive('username', function($q, $timeout) {
+          return {
+            require: 'ngModel',
+            link: function(scope, elm, attrs, ctrl) {
+              var usernames = scope.names;
+
+              ctrl.$asyncValidators.username = function(modelValue, viewValue) {
+
+                if (ctrl.$isEmpty(modelValue)) {
+                  // consider empty model valid
+                  return $q.when();
+                }
+
+                var def = $q.defer();
+
+                $timeout(function() {
+                  // Mock a delayed response
+                  if (usernames.indexOf(modelValue) === -1) {
+                    // The username is available
+                    def.resolve();
+                  } else {
+                    def.reject();
+                  }
+
+                }, 2000);
+
+                return def.promise;
+              };
+            }
+          };
+        });
     </script>
   </body>
 </html>

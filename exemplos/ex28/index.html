@@ -8,18 +8,12 @@
       Pesquisar:<input ng-model="query" type="text"/>
       <table>
           <tr>
-              <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">País</a></th>
-              <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">População</a></th>
-              <th>Bandeira</th>
-              <th>Capital</th>
-              <th><a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)">GDP (PPP)</a></th>
+              <th><a href="" ng-click="sortField = 'name'">País</a></th>
+              <th><a href="" ng-click="sortField = 'population'">População</a></th>
           </tr>
-          <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
+          <tr ng-repeat="country in countries | filter:query | orderBy:sortField">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
-              <td><img ng-src="../flags/{{country.code2}}.png" width="16"></td>
-              <td>{{country.capital}}</td>
-              <td>{{country.gdp | currency }}</td>
           </tr>
       </table>
 
@@ -31,7 +25,6 @@
               });
 
               $scope.sortField = 'population';
-              $scope.reverse = true;
           });
       </script>
   </body>

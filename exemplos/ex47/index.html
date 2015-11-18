@@ -17,7 +17,7 @@
                         templateUrl: 'country-list.html',
                         controller: 'CountryListCtrl'
                     }).
-                    when('/:countryId', {
+                    when('/:countryName', {
                         templateUrl: 'country-detail.html',
                         controller: 'CountryDetailCtrl'
                     }).
@@ -27,20 +27,24 @@
         });
 
         countryApp.factory('countries', function($http){
+
+            function getData(callback){
+                $http({
+                    method: 'GET',
+                    url: 'countries.json',
+                    cache: true
+                }).success(callback);
+            }
+
             return {
-                list: function (callback){
-                    $http({
-                        method: 'GET',
-                        url: 'countries.json',
-                        cache: true
-                    }).success(callback);
-                },
-                find: function(id, callback){
-                    $http({
-                        method: 'GET',
-                        url: 'country_' + id + '.json',
-                        cache: true
-                    }).success(callback);
+                list: getData,
+                find: function(name, callback){
+                    getData(function(data) {
+                        var country = data.filter(function(entry){
+                            return entry.name === name;
+                        })[0];
+                        callback(country);
+                    });
                 }
             };
         });
@@ -52,11 +56,14 @@
         });
 
         countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, countries){
-            countries.find($routeParams.countryId, function(country) {
+            countries.find($routeParams.countryName, function(country) {
                 $scope.country = country;
             });
         });
 
+        countryApp.filter('encodeURI', function(){
+            return window.encodeURI;
+        });
     </script>
 </body>
 </html>

@@ -26,32 +26,15 @@
                     });
         });
 
-        countryApp.factory('countries', function($http){
-            return {
-                list: function(callback){
-                    $http.get('countries.json').success(callback);
-                },
-                find: function(name, callback){
-                    $http.get('countries.json').success(function(data) {
-                        var country = data.filter(function(entry){
-                            return entry.name === name;
-                        })[0];
-                        callback(country);
-                    });
-                }
-            };
-        });
-
-        countryApp.controller('CountryListCtrl', function ($scope, countries){
-            countries.list(function(countries) {
-                $scope.countries = countries;
+        countryApp.controller('CountryListCtrl', function ($scope, $http) {
+            $http.get('countries.json').success(function (data) {
+                $scope.countries = data;
             });
         });
 
-        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, countries){
-            countries.find($routeParams.countryName, function(country) {
-                $scope.country = country;
-            });
+        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams) {
+            console.log($routeParams);
+            $scope.name = $routeParams.countryName;
         });
     </script>
 </body>

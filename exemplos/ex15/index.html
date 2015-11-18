@@ -6,14 +6,15 @@
   </head>
   <body ng-controller="NameCtrl">
       <ul>
-          <li ng-repeat="name in names">{{name}}
-          <a href="" ng-click="removeName(name)">Remover</a></li>
+          <li ng-repeat="name in names">{{name}}</li>
       </ul>
 
-      <form ng-submit="addName()">
-          <input type="text" ng-model="enteredName">
-          <input type="submit" value="add">
+      <form ng-submit="addName()" novalidate >
+          <input type="text" ng-model="enteredName" required ng-minlength=5 ng-maxlength=20 >
+          <input type="submit" >
       </form>
+
+      <pre ng-bind="enteredName | json"></pre>
 
     <script>
         var nameApp = angular.module('nameApp', []);
@@ -23,11 +24,6 @@
             $scope.addName = function() {
                 $scope.names.push($scope.enteredName);
                 $scope.enteredName = '';
-            };
-
-            $scope.removeName = function(name) {
-                var i = $scope.names.indexOf(name);
-                $scope.names.splice(i, 1);
             };
         });
     </script>

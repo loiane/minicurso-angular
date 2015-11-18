@@ -1,41 +1,38 @@
 <html ng-app="countryApp">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
-</head>
-<body>
-    <div ng-view></div>
+  </head>
+  <body ng-controller="CountryCtrl">
+      Pesquisar:<input ng-model="query" type="text"/>
+      <table>
+          <tr>
+              <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">País</a></th>
+              <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">População</a></th>
+              <th>Bandeira</th>
+              <th>Capital</th>
+              <th><a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)">GDP (PPP)</a></th>
+          </tr>
+          <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
+              <td>{{country.name}}</td>
+              <td>{{country.population | number }}</td>
+              <td><img ng-src="../flags/{{country.code2}}.png" width="16"></td>
+              <td>{{country.capital}}</td>
+              <td>{{country.gdp | currency }}</td>
+          </tr>
+      </table>
 
-    <script>
-        var countryApp = angular.module('countryApp', ['ngRoute']);
+     <script>
+          var countryApp = angular.module('countryApp', []);
+          countryApp.controller('CountryCtrl', function ($scope, $http){
+              $http.get('../data/countries.json').success(function(data) {
+                  $scope.countries = data;
+              });
 
-        countryApp.config(function($routeProvider) {
-            $routeProvider.
-                    when('/', {
-                        templateUrl: 'country-list.html',
-                        controller: 'CountryListCtrl'
-                    }).
-                    when('/:countryName', {
-                        templateUrl: 'country-detail.html',
-                        controller: 'CountryDetailCtrl'
-                    }).
-                    otherwise({
-                        redirectTo: '/'
-                    });
-        });
-
-        countryApp.controller('CountryListCtrl', function ($scope, $http) {
-            $http.get('countries.json').success(function (data) {
-                $scope.countries = data;
-            });
-        });
-
-        countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams) {
-            console.log($routeParams);
-            $scope.name = $routeParams.countryName;
-        });
-    </script>
-</body>
+              $scope.sortField = 'population';
+              $scope.reverse = true;
+          });
+      </script>
+  </body>
 </html>

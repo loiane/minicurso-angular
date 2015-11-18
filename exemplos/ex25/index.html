@@ -8,27 +8,22 @@
       Pesquisar:<input ng-model="query" type="text"/>
       <table>
           <tr>
-              <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">País</a></th>
-              <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">População</a></th>
-              <th>Bandeira</th>
+              <th>País</th>
+              <th>População</th>
           </tr>
-          <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse">
+          <tr ng-repeat="country in countries | filter:query">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
-              <td><img src="../flags/{{country.code2}}.png" width="16"></td>
           </tr>
       </table>
 
-     <script>
-          var countryApp = angular.module('countryApp', []);
-          countryApp.controller('CountryCtrl', function ($scope, $http){
-              $http.get('../data/countries.json').success(function(data) {
-                  $scope.countries = data;
-              });
-
-              $scope.sortField = 'population';
-              $scope.reverse = true;
-          });
-      </script>
+    <script>
+        var countryApp = angular.module('countryApp', []);
+        countryApp.controller('CountryCtrl', ['$scope', '$http', function (scope, http){
+            http.get('../data/countries.json').success(function(data) {
+                scope.countries = data;
+            });
+        }]);
+    </script>
   </body>
 </html>

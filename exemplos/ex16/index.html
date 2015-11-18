@@ -1,22 +1,39 @@
-<html ng-app="countryApp">
+<html ng-app="nameApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <style type="text/css">
+      .css-form input.ng-invalid.ng-touched {
+        background-color: #FA787E;
+      }
+
+      .css-form input.ng-valid.ng-touched {
+        background-color: #78FA89;
+      }
+    </style>
   </head>
-  <body ng-controller="CountryCtrl">
+  <body ng-controller="NameCtrl">
       <ul>
-          <li ng-repeat="country in countries">{{country.name}} - população {{country.population}}</li>
+          <li ng-repeat="name in names">{{name}}</li>
       </ul>
 
+      <form ng-submit="addName()" novalidate  class="css-form" >
+          <input type="text" ng-model="enteredName" required ng-minlength=5 ng-maxlength=20 >
+          <input type="submit" >
+      </form>
+
+      <pre ng-bind="enteredName | json"></pre>
+
     <script>
-        var countryApp = angular.module('countryApp', []);
-        countryApp.controller('CountryCtrl', function ($scope){
-            $scope.countries = [
-                {"name": "China", "population": 1359821000},
-                {"name": "India", "population": 1205625000},
-                {"name": "United States of America","population": 312247000}
-            ];
+        var nameApp = angular.module('nameApp', []);
+        nameApp.controller('NameCtrl', function ($scope){
+            $scope.names = ['Gandalf', 'Tyrion', 'Heisenberg'];
+
+            $scope.addName = function() {
+                $scope.names.push($scope.enteredName);
+                $scope.enteredName = '';
+            };
         });
     </script>
   </body>

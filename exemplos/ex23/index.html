@@ -5,27 +5,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body ng-controller="CountryCtrl">
-      Pesquisar:<input ng-model="query" type="text"/>
       <table>
           <tr>
-              <th><a href="" ng-click="sortField = 'name'">País</a></th>
-              <th><a href="" ng-click="sortField = 'population'">População</a></th>
+              <th>País</th>
+              <th>População</th>
           </tr>
-          <tr ng-repeat="country in countries | filter:query | orderBy:sortField">
+          <tr ng-repeat="country in countries">
               <td>{{country.name}}</td>
               <td>{{country.population}}</td>
           </tr>
       </table>
 
-     <script>
-          var countryApp = angular.module('countryApp', []);
-          countryApp.controller('CountryCtrl', function ($scope, $http){
-              $http.get('../data/countries.json').success(function(data) {
-                  $scope.countries = data;
-              });
-
-              $scope.sortField = 'population';
-          });
-      </script>
+    <script>
+        var countryApp = angular.module('countryApp', []);
+        countryApp.controller('CountryCtrl', function ($scope, $http){
+            $http.get('../data/countries.json').success(function(data) {
+                $scope.countries = data;
+            });
+        });
+    </script>
   </body>
 </html>

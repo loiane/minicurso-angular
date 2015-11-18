@@ -27,44 +27,44 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Exemplo 12: Listas com loop usando ng-repeat
 * Exemplo 13: Adicionando items na lista usando form e ng-submit
 * Exemplo 14: Limpando o textInput usando data-binding
-* A adicionar - 15: Adicionando validação básica ao formulário
-* A adicionar - 16: Adicionando CSS na validação do formulário
-* A adicionar - 17: Adicionando variáveis de controle no form e campos (CSS)
-* A adicionar - 18: Submeter valores de formulário válido no controller
-* A adicionar - 19: Adicionando validação customizada através de diretiva
-* Exemplo 15: Removendo nomes da lista usando ng-click
-* Exemplo 16: Enumerando objetos - países e população
-* Exemplo 17: Construindo uma tabela
-* Exemplo 18: Consumindo um JSON
-* Exemplo 19: Sintaxe de injeção de dependência para minificação
-* Exemplo 20: Adicionando pesquisa usando Filtros
-* Exemplo 21: Ordenando usando ng-repeat usando orderBy
-* Exemplo 22: Ordenando em forma decrescente
-* Exemplo 23: Ordenando colunas da tabela de forma interativa
-* Exemplo 24: Ordenação reversa de forma interativa
-* Exemplo 25: Adicionando imagens na tabela
-* Exemplo 26: Usando ng-src
-* Exemplo 27: Adicionando novas informações na lista
-* Exemplo 28: Formatando moeda usando Filtro no template
-* Exemplo 29: Formatando população usando Filtro no template
-* Exemplo 30: Consumindo um JSON do PHP + MySQL
-* Exemplo 31: Preparando roteamento - lista de países
-* Exemplo 32: Roteamento com ngRoute
-* Exemplo 33: Criando templates em arquivos diferentes
-* Exemplo 34: Extraindo e usando parâmetros das rotas
-* Exemplo 35: Usando links com rotas para navegar entre as views
-* Exemplo 36: Obtendo os detalhes de um país
-* Exemplo 37: Listando os detalhes de um país
-* Exemplo 38: Criando um serviço para listar os países
-* Exemplo 39: Extraindo os detalhes de um país para um serviço
-* Exemplo 40: Cacheando dados do JSON no serviço
-* Exemplo 41: Cacheando JSON usando a opção de cache
-* Exemplo 42: Criando um filtro para encodar URIs
-* Exemplo 43: Criando uma diretiva para os países (MERGE com 48)
-* Exemplo 44: Adicionando o Controller na diretiva customizada
-* Exemplo 45: Extraindo controller para um módulo separado
-* Exemplo 46: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
-* Exemplo 47: Simulando uma API RESTful
+* Exemplo 15: Adicionando validação básica ao formulário
+* Exemplo 16: Adicionando CSS na validação do formulário
+* Exemplo 17: Adicionando variáveis de controle no form e campos (CSS)
+* Exemplo 18: Fazendo submit de valores do formulário válido no controller e botão
+* Exemplo 19: Adicionando validação customizada através de diretiva
+* Exemplo 20: Removendo nomes da lista usando ng-click
+* Exemplo 21: Enumerando objetos - países e população
+* Exemplo 22: Construindo uma tabela
+* Exemplo 23: Consumindo um JSON
+* Exemplo 24: Sintaxe de injeção de dependência para minificação
+* Exemplo 25: Adicionando pesquisa usando Filtros
+* Exemplo 26: Ordenando usando ng-repeat usando orderBy
+* Exemplo 27: Ordenando em forma decrescente
+* Exemplo 28: Ordenando colunas da tabela de forma interativa
+* Exemplo 29: Ordenação reversa de forma interativa
+* Exemplo 30: Adicionando imagens na tabela
+* Exemplo 31: Usando ng-src
+* Exemplo 32: Adicionando novas informações na lista
+* Exemplo 33: Formatando moeda usando Filtro no template
+* Exemplo 34: Formatando população usando Filtro no template
+* Exemplo 35: Consumindo um JSON do PHP + MySQL
+* Exemplo 36: Preparando roteamento - lista de países
+* Exemplo 37: Roteamento com ngRoute
+* Exemplo 38: Criando templates em arquivos diferentes
+* Exemplo 39: Extraindo e usando parâmetros das rotas
+* Exemplo 40: Usando links com rotas para navegar entre as views
+* Exemplo 41: Obtendo os detalhes de um país
+* Exemplo 42: Listando os detalhes de um país
+* Exemplo 43: Criando um serviço para listar os países
+* Exemplo 44: Extraindo os detalhes de um país para um serviço
+* Exemplo 45: Cacheando dados do JSON no serviço
+* Exemplo 46: Cacheando JSON usando a opção de cache
+* Exemplo 47: Criando um filtro para encodar URIs
+* Exemplo 48: Criando uma diretiva para os países (MERGE com 48)
+* Exemplo 49: Adicionando o Controller na diretiva customizada
+* Exemplo 50: Extraindo controller para um módulo separado
+* Exemplo 51: Extraindo factories e diretivas para um módulo separado com cadeia de métodos
+* Exemplo 52: Simulando uma API RESTful
 * 48: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): criando o projeto
 * 49: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): READ
 * 50: CRUD com MEAN (MongoDB + Express + AngularJS + NodeJS): UPDATE
