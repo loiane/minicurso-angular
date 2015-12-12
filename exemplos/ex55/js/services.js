@@ -5,11 +5,7 @@ angular.module('todoService', [])
         var key = 'angularTodo';
 
         function getTasks(){
-            var tasks = window.localStorage[key];
-            if(tasks) {
-                return angular.fromJson(tasks);
-            }
-            return [];
+            return [{text: 'Teste1'}, {text: 'Teste2'}];
         }
 
         return {
