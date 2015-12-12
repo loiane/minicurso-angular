@@ -24,4 +24,23 @@ angular.module('todoController', [])
             }
         };
 
+        var editTask = function(taskName, task){
+            for(var i=0; i<$scope.tasks.length; i++){
+                if ($scope.tasks[i].id === task.id){
+                    $scope.tasks[i].text = taskName;
+                    break;
+                }
+            }
+            TasksService.save($scope.tasks);
+        };
+
+        $scope.editTodo = function(task) {
+
+            var taskName = prompt("Atualize a tarefa:", task.text);
+            if (taskName !== null) {
+                editTask(taskName, task);
+            }
+        };
+
+
     }]);
