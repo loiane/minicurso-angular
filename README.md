@@ -10,7 +10,7 @@ Para vídeos e certificado, acesse: [http://loiane.training](http://loiane.train
 * Conhecimentos em HTML/JS/CSS básico
 * Editor de texto (Sublime, Atom, Webstorm, Textpad, etc)
 * Webserver PHP instalado (Xampp, wamp, etc)
-* Node.JS + MondoDB
+* Node.JS + MongoDB
 
 # Exemplos
 * Exemplo 01: Exemplo simples com HTML
